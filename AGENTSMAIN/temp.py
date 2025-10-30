@@ -1,5 +1,3 @@
-'''just for testing out not a part of main system'''
-
 import json
 from llm_agent import generate_three_outfits_mistral
 
@@ -16,7 +14,7 @@ details = {
 }
 
 try:
-    dic = generate_three_outfits_mistral(details)
-    print("Parsed JSON:", json.dumps(dic, indent=2))
+    outfits = generate_three_outfits_mistral(details)
+    print("Parsed JSON:", json.dumps(outfits, indent=2))
 except Exception as e:
     print(f"Error: {e}")

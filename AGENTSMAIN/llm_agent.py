@@ -50,9 +50,6 @@ def generate_three_outfits_mistral(event_details):
         )
 
         output_text = response.choices[0].message.content if response.choices else ""
-        print("Raw API response:", output_text)
-        print("Response length:", len(output_text))
-
         if not output_text:
             raise ValueError("Mistral API returned an empty response")
 
