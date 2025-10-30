@@ -2,6 +2,7 @@ services:
   - type: web
     name: cloudcloset-outfit-api
     env: python
+    branch: main  # change if your default branch differs
     region: oregon
     plan: free
     buildCommand: pip install -r requirements.txt
